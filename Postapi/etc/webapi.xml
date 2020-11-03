@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--
+/**
+* Ontasy_Postapi
+*
+* @category Postapi
+* @package Ontasy_Postapi
+* @license http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+*/
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Dummy Api -->
+    <route url="/V1/dummy/api" method="POST">
+        <service class="Ontasy\Postapi\Api\ApiRepositoryInterface" method="getDataWithMessage" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <!-- Dummy Api -->
+</routes>
