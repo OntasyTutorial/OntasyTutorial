@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Ontasy_Postapi
+*
+* @category Postapi
+* @package Ontasy_Postapi
+* @license http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- preferences for interfaces -->
+    <preference for="Ontasy\Postapi\Api\ApiRepositoryInterface" type="Ontasy\Postapi\Model\ApiRepository" />
+    <preference for="Ontasy\Postapi\Api\Data\DataRepositoryInterface" type="Ontasy\Postapi\Model\Data\DataRepository" />
+</config>
